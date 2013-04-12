@@ -21,10 +21,10 @@ run(function () {
 		store.get('config', function(saved) {
 			if (saved) {
 				if (saved.map) {
-					x$('input[value=' + saved.map + ']').attr('checked',true);
+					$('input[value=' + saved.map + ']').attr('checked',true);
 				}
 				if (saved.zoom) {
-					x$('input[name=zoom][value="' + saved.zoom + '"]').attr('checked',true);
+					$('input[name=zoom][value="' + saved.zoom + '"]').attr('checked',true);
 				}
 			}
 		});

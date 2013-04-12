@@ -3,11 +3,20 @@
 	<head>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
 		<title>Training App</title>
-		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+			<link rel="stylesheet"  href="assets/css/jquery.mobile.theme.css">
+			<link rel="stylesheet"  href="assets/css/jquery.mobile.structure.css">
+		<link rel="stylesheet"  href="assets/css/jquery.mobile.css">
+		<link rel="stylesheet"  href="assets/css/master.css">
+		<link rel="shortcut icon" href="favicon.ico">
+
+	    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+		<script src="assets/js/jquery.js"></script>
+
+		<script src="assets/js/jquery.mobile.js"></script>
 		
-		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="phonegap.js" type="text/javascript" charset="utf-8"></script> -->
 		
-		<script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
 		
@@ -23,22 +32,28 @@
 		
 	</head>
 	<body>
- 		<div id="title_bar">Phone<strong>Gap</strong> Training App</div>
 
-		<div id="welcome" class="view">
-		  <div class="app_button" id="map_button">Show My Location</div>
-  	      <div class="app_button" id="settings_button">Settings</div>
+		<div data-role="page" data-theme="a" id="home">
+ 		<div data-role="header" data-position="fixed" class="header">
+ 			<a href="#" data-icon="bars" class="navmenu-link" data-iconpos="notext">Nav</a>
+ 			<h1>Spectrum </h1>
+ 		</div>
+
+			<div data-role="content" data-theme="a">
+			  <a data-role="button" href="#map" data-theme="a">Show My Location</a>
+	  	      <a href="#settings" data-role="button" data-theme="a" >Settings</a>
+			</div>
 		</div>
-
-		<div id="map" class="view">
+		<div data-role="page" data-theme="a" id="map">
 		  <div class="map_image">
               <img id="static_map" src="assets/img/staticmap.png">
 		  </div>
 		  <p>This is where you are</p>
-		  <div class="app_button" id="welcome_button">Go Back</div>
+		  <a href="#home" data-role="button" data-theme="a" data-inline="true">Home</a>
 		</div>
+	
 
-		<div id="settings" class="view">
+		<div data-role="page" data-theme="c" id="settings">
 		  <form id="settings_form">
 		    <fieldset>
 		      <legend>Map Type</legend>
@@ -57,6 +72,7 @@
   		     </fieldset>
 		      <button id="save_button">Save</button>
 	      </form>
+	      <a href="#home" data-role="button" data-theme="a" data-inline="true">Home</a>
 		</div>
 
 	</body>

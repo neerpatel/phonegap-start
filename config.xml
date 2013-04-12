@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.alunny.amazing"
+	id		= "com.nullpointers.intl-spectrum"
 	version 	= "1.0.0">
 
-	<name>alunnys Amazing App</name>
+	<name>International Spectrum Test App</name>
 
 	<description>
-		An Amazing app by alunny
+		Test App for International Spectrum
 	</description>
 
-	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+	<author href="http://nullpointers.com"
+		email="npatel@nullpointers.com">
+		Neer Patel
 	</author>
 
 	<gap:platforms>
@@ -22,9 +22,9 @@
 		<gap:platform name="blackberry" project="widgets"/>
 	</gap:platforms>
 
-	<icon src="blurry.png" gap:role="default" />
+	<!-- <icon src="blurry.png" gap:role="default" />
 
-    <gap:splash src="weirdo.png" />
+    <gap:splash src="weirdo.png" /> -->
 
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
